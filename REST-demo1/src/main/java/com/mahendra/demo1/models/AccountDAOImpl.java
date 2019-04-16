@@ -27,8 +27,10 @@ public class AccountDAOImpl implements AccountDAO {
 
 	@Override
 	public Account findByNumber(String accNum) {
+		System.out.println("Searching for "+accNum);
 		for(Account temp : accounts) {
-			if(temp.getAccNumber().equals(accNum)) {
+			System.out.println(temp.getAccNumber());
+			if(temp.getAccNumber().equalsIgnoreCase(accNum)) {
 				return temp;
 			}
 		}

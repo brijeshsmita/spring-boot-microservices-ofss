@@ -8,4 +8,5 @@ public interface AccountService {
 	String openNewAccount(String name,Double balance);
 	Account findAccount(String accNumber);
 	List<Account> getAll();
+	void update(Account acc);
 }

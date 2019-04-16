@@ -37,4 +37,9 @@ public class AccountServiceImpl implements AccountService {
 		return dao.getAll();
 	}
 
+	@Override
+	public void update(Account acc) {
+		dao.update(acc);		
+	}
+
 }
