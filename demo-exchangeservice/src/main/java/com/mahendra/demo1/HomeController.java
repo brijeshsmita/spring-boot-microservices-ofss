@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
   // Inject property USD into current variable
-	//@Value("${USD}")
+	@Value("${YEN}")
 	private String rupeesToUsd;
 	
 	@GetMapping("/")
