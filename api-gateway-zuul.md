@@ -23,10 +23,14 @@
         zuul.routes.exchange.service-id=exchange-service
 
 4.  Execution Sequence:
-        1. Start Eureka server "demo-eureka"
-        2. Start Config Server "demo-config1"
-        3. Start Real Service "demo-exchangeservice"
-        4. Start API Gateway "demo-api-gateway"
+        
+    1. Start Eureka server "demo-eureka"
+        
+    2. Start Config Server "demo-config1"
+        
+    3. Start Real Service "demo-exchangeservice"
+
+    4. Start API Gateway "demo-api-gateway"
 
 5.  Open Web browser and visit URL:
         http://localhost:8000/api/exchange/
